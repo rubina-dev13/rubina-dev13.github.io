@@ -27,7 +27,7 @@ header{
 
 }
 .nav-list{
-    display: block;
+    display: none;
 }
 nav ul li{
     list-style: none;
@@ -204,7 +204,7 @@ footer{
         display: none;
 
     }
-    .nev-list{
+    .nav-list{
         display: block;
     }
 }
@@ -276,3 +276,4 @@ footer{
 .panipuri{
  background-color: rgb(255, 195, 105);
 }
+
