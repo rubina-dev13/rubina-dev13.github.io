@@ -209,7 +209,7 @@ footer{
     }
 }
     
-@media only screen and (maxidth:768px){
+@media only screen and (max-width:768px){
     .hero h2 {
         font-size: 28px;
 
@@ -276,4 +276,5 @@ footer{
 .panipuri{
  background-color: rgb(255, 195, 105);
 }
+
 
