@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+     background-color: aliceblue;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color:aliceblue;
+    display:flex;
+    align-items:center;
+}
+.container{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.nav-list{
+    display: block;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right:20px;
+    font-weight: 550;
+}
+.logo{
+    font: size 24px;
+}
+.hero{
+    width:100%;
+    height:100%;
+    
+     background: url(images/new.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    padding: 200px 0;
+    
+    text-align: center;
+
+   
+}
+.hero h2{
+    font-size: 36px;
+    margin-bottom:10px;
+}
+.hero p{
+    font-size: 20px;
+    margin-bottom:10px;
+}
+.search-box{
+    max-width:550px;
+    margin: 15 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.search-box input{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    border: 1px solid rgb(245, 37,9);
+
+}
+.search-box button 
+ {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 1rem;
+    background-color: rgb(245, 37,9);
+    color: white;
+    cursor: pointer;
+ }
+
+ /* ......About page ......*/
+.about-section {
+  padding: 80px 0;
+  background: #fafafa;
+}
+
+.about-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* active nav link */
+.nav-list a.active {
+  color: tomato;
+  font-weight: bold;
+}
+ 
+/* ......Recipe Section ......*/
+.recipes{
+    padding: 50px 0;
+
+}
+
+.recipes h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+
+}
+.recipe-section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   column-gap: 10px;
+}
+.recipe-card{
+    background: white;
+    margin:30px 10px;
+    border-radius: 8px;
+    border: 1px solid antiquewhite;
+    overflow: hidden;
+}
+.recipe-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+      
+}
+.recipe-card h2{
+    font-size: 22px;
+    padding: 10px;
+    padding-bottom: 2px;
+    
+}
+.recipe-card p{
+    font-size: 18px;
+    padding: 15px;
+    padding-top: 2px;
+
+}
+.recipe-card a{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    background: black;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+footer{
+    background: black;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+   
+.menu-icon{
+    font-size: 24px;
+    padding:20px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+}
+/*......Media query.....*/
+@media only screen and (min-width:768px){
+    .menu-icon{
+        display: none;
+
+    }
+    .nev-list{
+        display: block;
+    }
+}
+    
+@media only screen and (maxidth:768px){
+    .hero h2 {
+        font-size: 28px;
+
+    }
+    .hero p {
+        font-size: 15px;
+    }
+}
+
+/*.....biryani recipe...*/
+
+.biryani img{
+ width: 70%;
+ height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+     object-fit: cover;
+}
+.biryani{
+ background-color: hotpink;
+}
+
+/*.....paneer recipe...*/
+
+.paneer img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+.paneer{
+ background-color: rgb(105, 238, 255);
+}
+
+/*.....pavbhaji recipe...*/
+
+.pavbhaji img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+.pavbhaji{
+ background-color: rgb(158, 105, 255);
+}
+
+
+/*.....panipuri recipe...*/
+
+.panipuri img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+.panipuri{
+ background-color: rgb(255, 195, 105);
+}
