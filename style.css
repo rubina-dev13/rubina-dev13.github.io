@@ -79,35 +79,7 @@ header{
     font-size: 20px;
     margin-bottom:10px;
 }
-.search-box{
-    max-width:550px;
-    margin: 15 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.search-box input{
-    width: 70%;
-    padding: 10px;
-    outline: none;
-    border: 0;
-    border-radius: 5px 0 0 5px;
-    font-size: 1rem;
-    border: 1px solid rgb(245, 37,9);
 
-}
-.search-box button 
- {
-    padding: 10px;
-    outline: none;
-    border: 0;
-    border-radius: 0px 5px 5px 0px;
-    font-size: 1rem;
-    background-color: rgb(245, 37,9);
-    color: white;
-    cursor: pointer;
- }
 
  /* ......About page ......*/
 .about-section {
@@ -300,6 +272,7 @@ footer{
 .panipuri{
  background-color: rgb(255, 195, 105);
 }
+
 
 
 
