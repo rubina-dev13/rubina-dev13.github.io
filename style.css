@@ -24,17 +24,35 @@ header{
     display: flex;
     align-items: center;
     justify-content:space-between;
+    position: relative;
 
 }
 .nav-list{
-    display: none;
-}
-nav ul li{
+
     list-style: none;
-    display: inline;
-    margin-right:20px;
-    font-weight: 550;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #222;
+    padding: 15px;
+    width: 150px;
+    z-index: 1000;
+
 }
+.nav-list  li {
+    margin: 10px 0;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list.active {
+    display: block;
+}
+
 .logo{
     font: size 24px;
 }
@@ -199,16 +217,22 @@ footer{
     display: block;
 }
 /*......Media query.....*/
-@media only screen and (min-width:768px){
+@media (min-width:768px)
+{
     .menu-icon{
         display: none;
 
     }
     .nav-list{
-        display: block;
+        display: flex;
+        position: static;
+        background: none;
+        width: auto;
+    }
+    .nav-list li {
+        margin: 0 15px;
     }
 }
-    
 @media only screen and (max-width:768px){
     .hero h2 {
         font-size: 28px;
@@ -276,5 +300,6 @@ footer{
 .panipuri{
  background-color: rgb(255, 195, 105);
 }
+
 
 
